@@ -11,25 +11,26 @@
     <script>src="../JS/bootstrap.min.js"</script>
     <script src="../JS/home.js"></script>
     <link rel="stylesheet" href="../CSS/style_home.css">
+    <link rel="stylesheet" href="../CSS/reponsive_home.css">
 </head>
 <body>
     <div class="wrapper">
         <header id="myHeader">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="header__div--info">
                         <i class="ti-headphone-alt"></i>
                         <span>Hotline : (028)-7878 0789 or 037-671-8766</span>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row" id="header__div--main" style="margin:0 5rem 0 7rem;">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                     <div class="header__div--logo">
-                        <img src="../IMG/Logo_header.png" class="rounded-circle" alt="Logo Puppy Paws">
+                        <img src="../IMG/Logo_header.png" class="object-fit-sm-cover object-fit-md-cover object-fit-lg-cover object-fit-xl-cover object-fit-xxl-cover rounded-circle" alt="Logo Puppy Paws">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <div class="header__div--search">
                         <div class="input-group mb-3">
                             <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm&hellip;" aria-label="Search">
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                     <div class="header__div--btn">
                         <a href="#" class="header__btn__about">Giới thiệu</a>
                         <a href="../HTML/buy.html" class="header_btn_cart">
@@ -50,8 +51,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8">
+            <div class="row" id="header__div--nav">
+                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                     <ul class="nav justify-content-flex-start" style="margin-top: 1rem;margin-left: 1rem;">
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
@@ -65,13 +66,13 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#">CÁCH NUÔI</a>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
             </div>
         </header>
         <div class="section">
-            <div class="row" style="width: 100%;margin-left: 1rem;">
-                <div class="col-md-2" style="margin: 0;">
+            <div class="row mw-100" style="margin-left: 1rem;">
+                <div class="col-sm-2 col-md-2" style="margin: 0;">
                     <div class="nav__div--left">
                         <div class="nav__div--left__title" onclick="toggleList()">
                             <i class="ti-menu"></i>
@@ -101,15 +102,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" style="margin: 0;">
-                    <img src="../IMG/banner1.png" alt="Banner Puppy Paws" style="width: 100%;object-fit: cover;">
+                <div class="col-sm-6 col-md-6" style="margin: 0;">
+                    <img src="../IMG/banner1.png" alt="Banner Puppy Paws" class="w-100 object-fit-sm-cover object-fit-md-cover object-fit-lg-cover object-fit-xl-cover object-fit-xxl-cover border rounded" alt="Puppy Paws Shop Pet Uy Tín">
                 </div>
-                <div class="col-md-4" style="margin: 0;">
-                    <img src="../IMG/banner_pet.png" alt="" style="width: 80%;object-fit: contain;height: 60%;">
+                <div class="col-sm-4 col-md-4" style="margin: 0;">
+                    <img src="../IMG/banner_pet.png" alt="" class="object-fit-sm-contain object-fit-md-contain object-fit-lg-contain object-fit-xl-contain object-fit-xxl-contain" style="margin-left: 20px; width: 50%; height: 100%;">
                 </div>
             </div>
-            <div class="row">
-                
+            <div class="row mw-100" style="margin-left: 3rem;">
+                <div class="col-md-3">
+                    <i class="ti-truck"></i>
+                    <span>Nhận Giao Hàng</span>
+                    <span>Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
             </div>
         </div>
 
