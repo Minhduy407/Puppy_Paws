@@ -8,118 +8,189 @@
     <link rel="stylesheet" href="../ICON/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="shortcut icon" href="../IMG/Logo_header.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <script>src="../JS/bootstrap.min.js"</script>
-    <script src="../JS/home.js"></script>
     <link rel="stylesheet" href="../CSS/style_home.css">
     <link rel="stylesheet" href="../CSS/reponsive_home.css">
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/home.js"></script>
+    
 </head>
 <body>
     <div class="wrapper">
-        <header id="myHeader">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div class="header__div--info">
-                        <i class="ti-headphone-alt"></i>
-                        <span>Hotline : (028)-7878 0789 or 037-671-8766</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="header__div--main" style="margin:0 5rem 0 7rem;">
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="header__div--logo">
-                        <img src="../IMG/Logo_header.png" class="object-fit-sm-cover object-fit-md-cover object-fit-lg-cover object-fit-xl-cover object-fit-xxl-cover rounded-circle" alt="Logo Puppy Paws">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="header__div--search">
-                        <div class="input-group mb-3">
-                            <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm&hellip;" aria-label="Search">
-                            <button class="btn btn-outline-primary" style="border: none;background-color: #5B3B30;" type="submit">
-                                <i class="header_search_icon ti-search"></i>
-                            </button>
+        <header>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header__div--info">
+                                <i class="ti-headphone-alt"></i>
+                                <span>Hotline : (028)-7878 0789 or 037-671-8766</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="header__div--btn">
-                        <a href="#" class="header__btn__about">Giới thiệu</a>
-                        <a href="../HTML/buy.html" class="header_btn_cart">
-                            <i class="header_btn_cart_icon ti-shopping-cart"></i>
-                            <span class="header_btn_cart_text">Giỏ hàng</span>
-                        </a>
-                        <a href="#" class="header_btn_question">Hỏi đáp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="header__div--nav">
-                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-                    <ul class="nav justify-content-flex-start" style="margin-top: 1rem;margin-left: 1rem;">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">KHUYẾN MÃI</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">TIN TỨC MỚI</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">CÁCH NUÔI</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <div class="section">
-            <div class="row mw-100" style="margin-left: 1rem;">
-                <div class="col-sm-2 col-md-2" style="margin: 0;">
-                    <div class="nav__div--left">
-                        <div class="nav__div--left__title" onclick="toggleList()">
-                            <i class="ti-menu"></i>
-                            <span>Danh mục sản phẩm</span>
+                    <div class="row" id="header__div--main" style="margin:0 5rem 0 7rem;">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 col-xxl-2">
+                            <img src="../IMG/Logo_header.png" class="object-fit-sm-cover object-fit-md-cover object-fit-lg-cover object-fit-xl-cover object-fit-xxl-cover rounded-circle logo_img" alt="Logo Puppy Paws">
                         </div>
-                        <div class="nav__div--left__list" id="list">
-                            <ul class="nav flex-column">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="header__div--search">
+                                <div class="input-group mb-3">
+                                    <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm&hellip;" aria-label="Search">
+                                    <button class="btn btn-outline-primary" style="border: none;background-color: #5B3B30;" type="submit">
+                                        <i class="header_search_icon ti-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-4 col-xxl-4">
+                            <div class="header__div--btn">
+                                <a href="#" class="header__btn__about">Giới thiệu</a>
+                                <a href="../HTML/buy.html" class="header_btn_cart">
+                                    <i class="header_btn_cart_icon ti-shopping-cart"></i>
+                                    <span class="header_btn_cart_text">Giỏ hàng</span>
+                                </a>
+                                <a href="#" class="header_btn_question">Hỏi đáp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="header__div--nav">
+                        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                            <ul class="nav justify-content-flex-start" style="margin-top: 1rem;margin-left: 1rem;">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Thú cưng</a>
-                                    <ul class="sub-menu" id="thucung-submenu">
-                                        <li><a href="#">Mèo</a></li>
-                                        <li><a href="#">Chó</a></li>
-                                        <li><a href="#">Nhím</a></li>
-                                        <li><a href="#">Hamster</a></li>
-                                    </ul>
+                                  <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Đồ chơi</a>
+                                  <a class="nav-link" href="#">KHUYẾN MÃI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Phụ kiện</a>
+                                  <a class="nav-link" href="#">TIN TỨC MỚI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Dịch vụ</a>
+                                  <a class="nav-link" href="#">CÁCH NUÔI</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6" style="margin: 0;">
-                    <img src="../IMG/banner1.png" alt="Banner Puppy Paws" class="w-100 object-fit-sm-cover object-fit-md-cover object-fit-lg-cover object-fit-xl-cover object-fit-xxl-cover border rounded" alt="Puppy Paws Shop Pet Uy Tín">
-                </div>
-                <div class="col-sm-4 col-md-4" style="margin: 0;">
-                    <img src="../IMG/banner_pet.png" alt="" class="object-fit-sm-contain object-fit-md-contain object-fit-lg-contain object-fit-xl-contain object-fit-xxl-contain" style="margin-left: 20px; width: 50%; height: 100%;">
+            </div>
+        </header>
+        <section style="margin-top: 300px;">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row mw-100" style="margin-left: 1rem;">
+                        <div class="col-sm-12 col-md-2" style="margin: 0;">
+                            <div class="nav__div--left">
+                                <div class="nav__div--left__title" onclick="toggleList()">
+                                    <i class="ti-menu"></i>
+                                    <span>Danh mục sản phẩm</span>
+                                </div>
+                                <div class="nav__div--left__list" id="list">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Thú cưng</a>
+                                            <ul class="sub-menu" id="thucung-submenu">
+                                                <li><a href="#">Mèo</a></li>
+                                                <li><a href="#">Chó</a></li>
+                                                <li><a href="#">Nhím</a></li>
+                                                <li><a href="#">Hamster</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Đồ chơi</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Phụ kiện</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Dịch vụ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6" style="margin: 0;">
+                            <img src="../IMG/banner1.png" alt="Banner Puppy Paws" class="w-100 object-fit-sm-cover object-fit-md-cover object-fit-lg-cover object-fit-xl-cover object-fit-xxl-cover border rounded" alt="Puppy Paws Shop Pet Uy Tín">
+                        </div>
+                        <div class="col-sm-12 col-md-4" style="margin: 0;">
+                            <img src="../IMG/banner_pet.png" alt="" class="object-fit-sm-contain object-fit-md-contain object-fit-lg-contain object-fit-xl-contain object-fit-xxl-contain" style="margin-left: 20px; width: 50%; height: 100%;">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row mw-100" style="margin-left: 3rem;">
-                <div class="col-md-3">
-                    <i class="ti-truck"></i>
-                    <span>Nhận Giao Hàng</span>
-                    <span>Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
+        </section>
+        <section style="margin-top: 100px;">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <i class="ti-truck"></i>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h5>Nhận Giao Hàng</h5>
+                                            <span class="text-secondary">Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <i class="ti-truck"></i>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h5>Hỗ Trợ Mua Hàng</h5>
+                                            <span class="text-secondary">Alo tổng đài 028.7304.0479 để được tư vấn và hỗ trợ đặt hàng mua hàng và giải đáp thắc mắc khi nuôi dưỡng thú cưng</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <i class="ti-truck"></i>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h5>Giá Cả Hợp Lý</h5>
+                                            <span class="text-secondary">Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <i class="ti-truck"></i>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h5>Ngập Tràn Khuyến Mãi</h5>
+                                            <span class="text-secondary">Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-3"></div>
             </div>
-        </div>
+        </section>
 
         <!-- footer -->
         <div class="footer">
