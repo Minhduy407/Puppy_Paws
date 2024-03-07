@@ -4,9 +4,27 @@
     box-sizing: border-box;
 }
 
-*[class^="col-"] {
+section *[class^="col-"],
+header *[class^="col-"]{
     padding: 0;
     margin: 0 auto;
+}
+
+#register .row,
+#register .form-group{
+    margin-bottom: 1rem;
+}
+
+.modal-header .nav-link.active {
+    color: #FEC7C0 !important; /* Màu chữ cam */
+    border: none !important; /* Bỏ viền */
+    border-bottom: 2px solid #FEC7C0 !important; /* Thêm đường gạch chân màu cam */
+}
+
+/* Thêm màu cho liên kết chưa được chọn */
+.modal-header .nav-link:not(.active) {
+    color: black !important; /* Màu chữ đen */
+    border: none !important; /* Bỏ viền */
 }
 
 body {
@@ -32,7 +50,6 @@ header {
     z-index: 100;
 }
 
-
 .header__div--info {
     display: flex;
     justify-content: flex-end;
@@ -46,11 +63,12 @@ header {
 }
 
 .header_btn_cart,
+.header_btn_login,
 .header_btn_question,
 .header__btn__about {
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .rounded-circle {
@@ -194,6 +212,52 @@ section {
 .sub-menu li{
     margin-left: 1rem;
 }
+
+.section__header__link{
+    text-decoration: none;
+    color: black;
+    background-color: #FFD5AC;
+    border: 1px solid #FFD5AC;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0.6rem 0.4rem 0.7rem 0.4rem;
+}
+
+.section__header{
+    border-bottom: 0.2rem solid #FFD5AC;
+    margin-bottom: 0.5rem;
+}
+
+.section--animals{
+    margin-top: 8%;
+    background-color: white;
+}
+
+.section--animals .card{
+    margin: 0 0.5rem;
+}
+
+.section--animals .card-title,
+.section--animals .card-text,
+.section--animals .card-link{
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.section__footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section__footer__link{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .footer{
     background-color: #FEC7C0;
