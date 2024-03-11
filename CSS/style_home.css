@@ -123,12 +123,11 @@ header {
 }
 
 .modal-header .nav-link.active {
-    color: #FEC7C0 !important; /* Màu chữ cam */
+    color: #FEC7C0 !important; 
     border: none !important; /* Bỏ viền */
-    border-bottom: 2px solid #FEC7C0 !important; /* Thêm đường gạch chân màu cam */
+    border-bottom: 2px solid #FEC7C0 !important; 
 }
 
-/* Thêm màu cho liên kết chưa được chọn */
 .modal-header .nav-link:not(.active) {
     color: black !important; /* Màu chữ đen */
     border: none !important; /* Bỏ viền */
