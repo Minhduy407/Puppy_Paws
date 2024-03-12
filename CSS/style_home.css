@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-.wrapper{
-    width: 80%;
-    margin: 0 auto;
-}
-
 section *[class^="col-"],
 header *[class^="col-"]{
     padding: 0;
@@ -339,8 +334,19 @@ header {
 .footer{
     background-color: #FEC7C0;
     border-top: 1px solid #dfdfdf;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 0 0;
     line-height: 24px;
+}
+
+.footer-top{
+    border-top: 1px solid #5B3B30;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #5B3B30;
+}
+
+.footer-bottom{
+    padding-top: 1rem;
 }
 
 .footer p:nth-child(1),
