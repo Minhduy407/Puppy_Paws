@@ -24,6 +24,10 @@ body {
     flex-direction: column;
 }
 
+.btn:focus{
+    outline-color: #FEC7C0 !important;
+}
+
 header {
     width: 100%;
     max-width: 1600px;
@@ -44,14 +48,15 @@ header {
 
 .header_btn_cart,
 .header_btn_login,
-.header_btn_question,
-.header__btn__about {
+.header_btn_question {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    margin: 0 1rem;
 }
 
-.header_btn_login_icon{
+.header_btn_login_icon,
+.header_btn_question_icon,
+.header_btn_cart_icon{
     color: white;
 }
 
@@ -76,15 +81,15 @@ header {
 .header_search_icon:hover
 {
     cursor: pointer;
-    color: black;
+    color: black !important;
 }
 
 .header__div--btn {
+    margin: 0 2rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
 }
 
-.header__btn__about:hover,
 .header_btn_cart:hover,
 .header_btn_question:hover,
 .header_btn_login:hover{
@@ -101,6 +106,33 @@ header {
 #header__div--nav .nav{
     margin-top: 1rem;
     margin-left: 1rem;
+}
+
+#header__div--nav .nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+#header__div--nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px; /* Chiều cao của gạch */
+    background-color: #FEC7C0; /* Màu của gạch */
+    transition: width 0.3s ease, left 0.3s ease; /* Hiệu ứng chuyển động */
+    transform: translateX(0%);
+}
+
+#header__div--nav .nav-link:hover {
+    color: #FEC7C0;
+}
+
+#header__div--nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .header__div--nav{
@@ -184,7 +216,7 @@ header {
 
 .section__banner__div--left__title{
     background-color: #FFD5AC;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1.5rem 0 1.5rem 1rem;
     border-radius: 0.4rem;
     color: white;
 }
@@ -194,7 +226,7 @@ header {
 }
 
 .section__banner__div--left__list {
-    display: none;
+    display: block;
     z-index: 99;
     background-color: white;
 }
@@ -202,21 +234,61 @@ header {
 .section__banner__div--left__title.active + .section__banner__div--left__list {
     display: block;
 }
-.section__banner__div--left__list>ul>li{
+.section__banner__div--left__list ul li{
     list-style: none;
     padding: 0.5rem;
     border-bottom: 1px solid #FFD5AC;
-
 }
 
-.section__banner__div--left__list>ul>li>a {
+.section__banner__div--left__list ul li a {
     color: rgb(67, 60, 60);
     text-decoration: none;
 }
 
-.section__banner__div--left__list>ul>li>a:hover,
-#animals-submenu a:hover{
-    color: red;
+/* Tạo transition để hiệu ứng mượt mà */
+.section__banner__div--left__list  ul  li  a{
+    transition: transform 0.3s ease; /* Thời gian và kiểu chuyển động */
+    position: relative; /* Thiết lập phần tử có vị trí tương đối */
+    color: inherit; /* Kế thừa màu chữ từ phần tử cha */
+}
+
+/* Scale khi hover */
+.section__banner__div--left__list  ul  li  a:hover{
+  transform: scale(1.1); /* Phóng to 110% */
+  color: #FFD5AC;
+}
+  
+  /* Tạo hiệu ứng gạch dưới khi hover */
+.section__banner__div--left__list ul li a::after {
+    content: ''; /* Nội dung của phần tử giả mạo */
+    position: absolute; /* Thiết lập vị trí tuyệt đối */
+    left: 50%; /* Đặt ở giữa */
+    bottom: 0; /* Đặt ở dưới cùng */
+    width: 0; /* Bắt đầu với chiều rộng 0 */
+    height: 8px; /* Chiều cao của gạch */
+    background-color: #FFD5AC; /* Màu của gạch */
+    transition: width 0.3s ease, left 0.3s ease; /* Hiệu ứng chuyển động */
+    transform: translateX(0%); /* Dịch chuyển về giữa */
+}
+  
+  /* Hiển thị hiệu ứng gạch dưới khi hover */
+.section__banner__div--left__list ul li a:hover::after {
+    width: 50%; /* Mở rộng chiều rộng của gạch */
+    left: 0; /* Di chuyển sang trái để lan rộng từ giữa ra hai bên */
+}
+
+.sub-menu{
+    background-color: white;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.sub-menu li{
+    margin-left: 1rem;
+}
+
+#animals-submenu{
+    z-index: 100;
 }
 
 .section__banner__div--left__list ul li {
@@ -236,34 +308,32 @@ header {
 }
 
 .section__banner__div--left__list .nav-item {
-    margin-bottom: 10px;
     position: relative; /* Đặt vị trí tương đối để submenu có thể đặt vị trí tuyệt đối trong nó */
 }
 
-.section__banner__div--left__list .sub-menu {
+.section__banner__div--left__list #animals-submenu,
+.section__banner__div--left__list #animals-dog-submenu,
+.section__banner__div--left__list #animals-cat-submenu,
+.section__banner__div--left__list #animals-nhim-submenu,
+.section__banner__div--left__list #animals-hamster-submenu {
     display: none;
     padding-left: 15px;
     position: absolute;
-    top: 0;
+    top: 20%;
     left: 100%; /* Hiển thị submenu bên phải của .nav-item */
 }
 
-.section__banner__div--left__list .nav-item:hover .sub-menu {
+.section__banner__div--left__list li:nth-child(1):hover #animals-submenu 
+{
     display: block;
 }
 
-.sub-menu{
-    background-color: white;
-    border-radius: 0.4rem;
-    width: 100%;
-}
-
-.sub-menu li{
-    margin-left: 1rem;
-}
-
-#animals-submenu{
-    z-index: 100;
+.section__banner__div--left__list #animals-submenu li:nth-child(1):hover #animals-dog-submenu,
+.section__banner__div--left__list #animals-submenu li:nth-child(2):hover #animals-cat-submenu, 
+.section__banner__div--left__list #animals-submenu li:nth-child(3):hover #animals-nhim-submenu, 
+.section__banner__div--left__list #animals-submenu li:nth-child(4):hover #animals-hamster-submenu
+{
+    display: block;
 }
 
 .section__banner{
@@ -349,8 +419,9 @@ header {
     padding-top: 1rem;
 }
 
-.footer p:nth-child(1),
-.footer p:nth-child(5) {
+.footer-top p:nth-child(1),
+.footer-top p:nth-child(5),
+.footer-bottom p:nth-child(1) {
     font-weight: 600;
 }
 
@@ -365,4 +436,10 @@ header {
 
 .footer-bottom .col-6:nth-child(2){
     text-align: end;
+}
+
+.footer-bottom .row:nth-child(2){
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }

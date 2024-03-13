@@ -37,7 +37,7 @@
                             <div class="header__div--search">
                                 <div class="input-group mb-3">
                                     <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm&hellip;" aria-label="Search">
-                                    <button class="btn btn-outline-primary" type="submit">
+                                    <button class="btn" type="submit">
                                         <i class="header_search_icon ti-search"></i>
                                     </button>
                                 </div>
@@ -45,36 +45,54 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-4">
                             <div class="header__div--btn">
-                                <a href="#" class="header__btn__about">Giới thiệu</a>
-                                <a href="#" class="header_btn_cart">
-                                    <i class="header_btn_cart_icon ti-shopping-cart"></i>
-                                    <span class="header_btn_cart_text">Giỏ hàng</span>
+                                <!-- Button trigger modal -->
+                                <a href="#" class="header_btn_question" data-bs-toggle="modal" data-bs-target="#authModal_Question" >
+                                    <i class="header_btn_question_icon fa fa-question fa-2x"></i>
                                 </a>
-                                <a href="#" class="header_btn_question" data-bs-toggle="modal" data-bs-target="#authModal_Question">Hỏi đáp</a>
                                 <!-- Button trigger modal -->
                                 <a href="" class="header_btn_login" data-bs-toggle="modal" data-bs-target="#authModal_Login">
-                                    <i class="header_btn_login_icon fa fa-user" aria-hidden="true"></i>
-                                    <span class="header_btn_login_text">Đăng nhập</span>
+                                    <i class="header_btn_login_icon fa fa-user fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="header_btn_cart">
+                                    <i class="header_btn_cart_icon fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="row" id="header__div--nav">
-                        <div class="col-8">
-                            <ul class="nav justify-content-flex-start">
-                                <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">KHUYẾN MÃI</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">TIN TỨC MỚI</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">CÁCH NUÔI</a>
-                                </li>
-                            </ul>
+                        <div class="col-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="nav justify-content-flex-start">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">KHUYẾN MÃI</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">TIN TỨC MỚI</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CÁCH NUÔI</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">FANPAGE PUPPY PAWS</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">LIÊN HỆ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">GIỚI THIỆU</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -95,10 +113,46 @@
                                         <li class="nav-item">
                                             <a class="nav-link" aria-current="page" href="#">Thú cưng</a>
                                             <ul class="sub-menu" id="animals-submenu">
-                                                <li><a href="#">Mèo</a></li>
-                                                <li><a href="#">Chó</a></li>
-                                                <li><a href="#">Nhím</a></li>
-                                                <li><a href="#">Hamster</a></li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Chó</a>
+                                                    <ul class="sub-menu" id="animals-dog-submenu">
+                                                        <li class="nav-item"><a class="nav-link" href="#">Các loài chó</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thức ăn cho chó</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thời trang cho chó</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Chuồng cho chó</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Cách nuôi chó</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Mèo</a>
+                                                    <ul class="sub-menu" id="animals-cat-submenu">
+                                                        <li class="nav-item"><a class="nav-link" href="#">Các loài mèo</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thức ăn cho mèo</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thời trang cho mèo</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Chuồng cho mèo</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Cách nuôi mèo</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Nhím</a>
+                                                    <ul class="sub-menu" id="animals-nhim-submenu">
+                                                        <li class="nav-item"><a class="nav-link" href="#">Các loài nhím</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thức ăn cho nhím</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thời trang cho nhím</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Chuồng cho nhím</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Cách nuôi nhím</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Hamster</a>
+                                                    <ul class="sub-menu" id="animals-hamster-submenu">
+                                                        <li class="nav-item"><a class="nav-link" href="#">Các loài hamster</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thức ăn cho hamster</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Thời trang cho hamster</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Chuồng cho hamster</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Cách nuôi hamster</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
@@ -109,6 +163,15 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Dịch vụ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Sản Phẩm Thú Y</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Thời Trang & Dây Dắt</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Balo & Giỏ Vận Chuyển</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -831,6 +894,26 @@
                         </div>
                         <div class="col-6">
                             <img src="../IMG/LOGO/payment.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Họ và Tên</p>
+                            <p>Huỳnh Lê Minh Duy</p>
+                            <p>Lê Ngọc Hảo</p>
+                            <p>Lê Minh Khoa</p>
+                            <p>Nguyễn Thị Tuyết Lan</p>
+                            <p>Phạm Tăng Hoàng</p>
+                            <p></p>
+                        </div>
+                        <div class="col-2">
+                            <p>Mã số sinh viên</p>
+                            <p>22662651</p>
+                            <p>22683241 </p>
+                            <p></p>
+                            <p>22651091</p>
+                            <p>22691881</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
