@@ -1,0 +1,227 @@
+header *[class^="col-"]{
+    padding: 0;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #FEC7C0;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    z-index: 100;
+    margin: 0 auto;
+}
+
+.header__div--info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 0.2rem solid #FFD5AC;
+    color: aliceblue;
+}
+
+.header_btn_cart,
+.header_btn_login,
+.header_btn_question {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+}
+
+.header_btn_login_icon,
+.header_btn_question_icon,
+.header_btn_cart_icon{
+    color: white;
+}
+
+.rounded-circle {
+    width: 150px;
+}
+
+.header__div--search {
+    margin-top: 5rem;
+}
+
+.header__div--search .btn{
+    border: none;
+    background-color: #5B3B30;
+}
+
+.header_search_icon{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.header_search_icon:hover
+{
+    cursor: pointer;
+    color: black !important;
+}
+
+.header__div--btn {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header_btn_cart:hover,
+.header_btn_question:hover,
+.header_btn_login:hover{
+    color: black;
+}
+
+#header__div--nav> div {
+    border-bottom: none;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #5B3B30;
+}
+
+#header__div--nav .nav{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#header__div--nav .nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+#header__div--nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px; /* Chiều cao của gạch */
+    background-color: #FEC7C0; /* Màu của gạch */
+    transition: width 0.3s ease, left 0.3s ease; /* Hiệu ứng chuyển động */
+    transform: translateX(0%);
+}
+
+#header__div--nav .nav-link:hover {
+    color: #FEC7C0;
+}
+
+#header__div--nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.header__div--nav{
+    background-color: #5B3B30;
+    border: none;
+}
+
+.modal-body .row,
+.modal-body .form-group{
+    margin-bottom: 1rem;
+}
+
+#basic-addon1{
+    border: none;
+}
+
+.modal-header .nav-link.active {
+    color: #FEC7C0 !important; 
+    border: none !important; /* Bỏ viền */
+    border-bottom: 2px solid #FEC7C0 !important; 
+}
+
+.modal-header .nav-link:not(.active) {
+    color: black !important; /* Màu chữ đen */
+    border: none !important; /* Bỏ viền */
+}
+
+.modal-body{
+    padding-top: 0;
+}
+
+.modal-body #login span,
+.modal-body #question span{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(54, 50, 50);
+    font-size: 20px;
+}
+
+.modal-body #login a{
+    text-decoration: none;
+    color: rgb(42, 38, 38);
+}
+
+.modal-body #login a:hover{
+    color: #FEC7C0;
+}
+
+.modal-body button{
+    background-color: #FEC7C0;
+    color:white
+}
+
+.modal-body button:hover{
+    color: black;
+    background-color: #FFD5AC;
+}
+
+.modal-body #register a{
+    text-decoration: none;
+    color: #FEC7C0;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:focus {
+    color: black;
+}
+
+.footer{
+    background-color: #FEC7C0;
+    border-top: 1px solid #dfdfdf;
+    padding: 40px 0 0 0;
+    line-height: 24px;
+}
+
+.footer .container{
+    margin: 0 auto;
+}
+
+.footer-top{
+    border-top: 1px solid #5B3B30;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #5B3B30;
+}
+
+.footer-bottom{
+    padding-top: 1rem;
+}
+
+.footer-top p:nth-child(1),
+.footer-top p:nth-child(5),
+.footer-bottom p:nth-child(1) {
+    font-weight: 600;
+}
+
+.footer-top .footer-top_link{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-top .footer-top_link:hover{
+    color: white;
+}
+
+.footer-bottom .col-6:nth-child(2){
+    text-align: end;
+}
+
