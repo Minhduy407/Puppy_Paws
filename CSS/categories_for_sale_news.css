@@ -1,0 +1,30 @@
+.categories_for_sale_news table{
+    width: 100%;
+}
+
+.categories_for_sale_news table td,
+.search_categories table td,
+.recent-post table td{
+    border: 1px solid lightgray;
+    
+    padding: 20px;
+}
+
+.categories_for_sale_news table a,
+.recent-post table a{
+    text-decoration: none;
+    color: rgba(92, 84, 84, 0.962);
+}
+
+.categories_for_sale_news table a:hover,
+.recent-post table a:hover{
+    color: rgba(39, 36, 36, 0.962);
+    font-size: 20px;
+}
+
+.search_categories table,
+.recent-post table{
+    width: 100%;
+    margin-top: 50px;
+}
+

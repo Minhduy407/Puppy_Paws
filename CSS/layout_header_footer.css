@@ -8,17 +8,22 @@ header {
     background-color: #FEC7C0;
     position: fixed;
     top: 0px;
-    transition: top 0.3s;
     z-index: 100;
     margin: 0 auto;
 }
 
-.header__div--info {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-bottom: 0.2rem solid #FFD5AC;
-    color: aliceblue;
+.header{
+    transition: transform 0.5s ease;
+}
+
+.header.scrolled {
+    transform: translateY(-55%);
+    transition-duration: 1s;
+    background-color: #5B3B30;
+}
+
+.header__div--main--logo{
+    display: none;
 }
 
 .header_btn_cart,
@@ -33,14 +38,6 @@ header {
 .header_btn_question_icon,
 .header_btn_cart_icon{
     color: white;
-}
-
-.rounded-circle {
-    width: 150px;
-}
-
-.header__div--search {
-    margin-top: 5rem;
 }
 
 .header__div--search .btn{
@@ -60,7 +57,6 @@ header {
 }
 
 .header__div--btn {
-    margin: 0 2rem;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -139,8 +135,8 @@ header {
     padding-top: 0;
 }
 
-.modal-body #login span,
-.modal-body #question span{
+.modal-body #login span:nth-child(1),
+.modal-body #question span:nth-child(1){
     font-family: 'Dancing Script', cursive;
     color: rgb(54, 50, 50);
     font-size: 20px;

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/layout_header_footer.css">
     <link rel="stylesheet" href="../CSS/style_home.css">
+    <link rel="stylesheet" href="../CSS/style_card.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../JS/bootstrap.min.js"></script>
@@ -19,25 +20,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <header id="header">
-            <div class="container-fluid">
+        <header class="header" id="header">
+            <div class="container-fluid p-0">
                 <div class="container">
-                    <div class="row" id="header__div--infomation">
-                        <div class="col-12">
-                            <div class="header__div--info">
-                                <i class="ti-headphone-alt"></i>
-                                <span>Hotline : (028)-7878 0789 or 037-671-8766</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" id="header__div--main">
-                        <div class="col-12 col-sm-12 col-md-4">
-                            <img src="../IMG/Logo_header.png" class="object-fit-sm-cover object-fit-md-cover rounded-circle" alt="Logo Puppy Paws">
+                    <div class="row align-items-center" id="header__div--main">
+                        <div class="col-12 col-sm-12 col-md-4 ">
+                            <img src="../IMG/Logo_header.png" id="header__div--main--logo" alt="Logo Puppy Paws">
                         </div>
                         <div class="col-12 col-sm-12 col-md-4">
                             <div class="header__div--search">
                                 <div class="input-group mb-3">
-                                    <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm&hellip;" aria-label="Search">
+                                    <input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm&hellip;" aria-label="Search" required>
                                     <button class="btn" type="submit">
                                         <i class="header_search_icon ti-search"></i>
                                     </button>
@@ -70,13 +63,13 @@
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="nav justify-content-flex-start">
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
+                                                <a class="nav-link active" aria-current="page" href="./products.html">SẢN PHẨM</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">KHUYẾN MÃI</a>
+                                                <a class="nav-link" href="./khuyenmai.html">KHUYẾN MÃI</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">TIN TỨC MỚI</a>
+                                                <a class="nav-link" href="./tintuc.html">TIN TỨC MỚI</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="#">CÁCH NUÔI</a>
@@ -225,15 +218,15 @@
         <section class="section__info">
             <div class="container">
                 <div class="row" >
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <i><img src="../ICON/sevice_icon1.png" alt=""></i>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-2 col-lg-3">
+                                            <i class="fa fa-ship" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-sm-12 col-md-10 col-lg-9">
                                             <h5>Nhận Giao Hàng</h5>
                                             <span class="text-secondary">Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
                                         </div>
@@ -242,32 +235,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <i><img src="../ICON/sevice_icon2.png" alt=""></i>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-2 col-lg-3">
+                                            <i class="fa fa-headset"></i>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-sm-12 col-md-10 col-lg-9">
                                             <h5>Hỗ Trợ Mua Hàng</h5>
-                                            <span class="text-secondary">Alo tổng đài 028.7304.0479 để được tư vấn và hỗ trợ đặt hàng mua hàng và giải đáp thắc mắc khi nuôi dưỡng thú cưng</span>
+                                            <span class="text-secondary">Alo tổng đài 037.661.8766 để được tư vấn và hỗ trợ đặt hàng mua hàng khi nuôi dưỡng thú cưng</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <i><img src="../ICON/sevice_icon3.png" alt=""></i>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-2 col-lg-3">
+                                            <i class='fas fa-piggy-bank'></i>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-sm-12 col-md-10 col-lg-9">
                                             <h5>Giá Cả Hợp Lý</h5>
                                             <span class="text-secondary">Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
                                         </div>
@@ -276,17 +269,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <i><img src="../ICON/sevice_icon4.png" alt=""></i>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-2 col-lg-3">
+                                            <i class="fas fa-gift"></i>
                                         </div>
-                                        <div class="col-md-10">
+                                        <div class="col-sm-12 col-md-10 col-lg-9">
                                             <h5>Ngập Tràn Khuyến Mãi</h5>
-                                            <span class="text-secondary">Giao thú cưng toàn các tỉnh Tây Nam Bộ, giao trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
+                                            <span class="text-secondary">Giao thú cưng toàn các tỉnh khác, trong ngày tại Tp.HCM. Giao phụ kiện, đồ dùng toàn quốc.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -301,12 +294,12 @@
             <div class="container">
                 <!-- Video giới thiệu -->
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-12 col-md-6">
                         <div class="section__animals--header--video">
-                            <video autoplay loop muted width="100%" height="350px" src="../VIDEO/WELCOM TO MY PETS SHOP.mp4"></video>
+                            <video autoplay loop muted width="100%" src="../VIDEO/WELCOM TO MY PETS SHOP.mp4"></video>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-12 col-md-6">
                         <div class="section__animals--header--banner">
                             <img src="../IMG/BANNER/WELCOM TO MY PETS SHOP.jpg" alt="">
                         </div>
@@ -314,7 +307,7 @@
                 </div>
                 <!-- Chó, Mèo Kiểng -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <div class="section__animals--header">
                             <h3>
                                 <a href="#" class="section__animals--header__link">CHÓ, MÈO KIỂNG</a>
@@ -322,125 +315,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" >
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/PhocSoc1.jpg" class="card-img-top" alt="Phốc Sốc" srcset="">
-                                    </div>
+                <div class=" row list_product m-0">
+                    <div class="col-sm-12 col-md-4 box ">
+                        <div class="card_product">
+                            <img class="card__background" src="../IMG/PET/Husky1.jpg"
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920" height="2193" />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">Husky</h2>
+                                    <p class="card__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                        labore laudantium deserunt fugiat numquam.
+                                    </p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Phốc Sốc</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
+                                <button class="card__button">Read more</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/Corgi1.jpg" class="card-img-top" alt="Corgi" srcset="">
-                                    </div>
+                    <div class="col-sm-12 col-md-4 box">
+                        <div class="card_product">
+                            <img class="card__background" src="../IMG/PET/Husky1.jpg"
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920" height="2193" />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">Husky</h2>
+                                    <p class="card__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                        labore laudantium deserunt fugiat numquam.
+                                    </p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Corgi</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
+                                <button class="card__button">Read more</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/alaska1.jpg" class="card-img-top" alt="Husky" srcset="">
-                                    </div>
+                    <div class="col-sm-12 col-md-4 box">
+                        <div class="card_product">
+                            <img class="card__background" src="../IMG/PET/Husky1.jpg"
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920" height="2193" />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">Husky</h2>
+                                    <p class="card__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                        labore laudantium deserunt fugiat numquam.
+                                    </p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Alaska</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
+                                <button class="card__button">Read more</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/Poodle1.jpeg" class="card-img-top" alt="Poodle" srcset="">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Poodle</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-                <div class="row" >
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/meo-anh-long-dai.jpg" class="card-img-top" alt="Mèo Anh Lông Dài" srcset="">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Mèo Anh Lông Dài</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/meo-anh-long-ngan-jpg.png" class="card-img-top" alt="Mèo Anh Lông Ngắn" srcset="">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Mèo Anh Lông Ngắn</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                    </div>
-                    <div class="col-md-3">
-                    </div>  
                 </div>
                 <div class="row">
                     <div class="container">
-                        <div class="col-md-12">
+                        <div class="col-12">
                             <div class="section__animals--footer">
                                 <a href="#" class="section__animals--footer__link btn ">Xem thêm</a>
                             </div>
@@ -457,83 +387,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" >
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/Meo_anh_long_ngan.jpg" class="card-img-top" alt="Mèo Anh Lông Ngắn" srcset="">
-                                    </div>
+                <div class=" row list_product m-0">
+                    <div class="col-sm-12 col-md-4 box ">
+                        <div class="card_product">
+                            <img class="card__background" src="../IMG/PET/Husky1.jpg"
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920" height="2193" />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">Husky</h2>
+                                    <p class="card__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                        labore laudantium deserunt fugiat numquam.
+                                    </p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Mèo Anh lông ngắn</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
+                                <button class="card__button">Read more</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/Meo_anh_long_ngan.jpg" class="card-img-top" alt="Mèo Anh Lông Ngắn" srcset="">
-                                    </div>
+                    <div class="col-sm-12 col-md-4 box">
+                        <div class="card_product">
+                            <img class="card__background" src="../IMG/PET/Husky1.jpg"
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920" height="2193" />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">Husky</h2>
+                                    <p class="card__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                        labore laudantium deserunt fugiat numquam.
+                                    </p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Mèo Anh lông ngắn</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
+                                <button class="card__button">Read more</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/hamster_robo.png" class="card-img-top " alt="Hamster Robo" srcset="">
-                                    </div>
+                    <div class="col-sm-12 col-md-4 box">
+                        <div class="card_product">
+                            <img class="card__background" src="../IMG/PET/Husky1.jpg"
+                                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                                width="1920" height="2193" />
+                            <div class="card__content | flow">
+                                <div class="card__content--container | flow">
+                                    <h2 class="card__title">Husky</h2>
+                                    <p class="card__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                                        labore laudantium deserunt fugiat numquam.
+                                    </p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Mèo Anh lông ngắn</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="../IMG/PET/Meo_anh_long_ngan.jpg" class="card-img-top" alt="Mèo Anh Lông Ngắn" srcset="">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="card-title">Mèo Anh lông ngắn</h5>
-                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
-                                        <a href="#" class="btn card-link">Xem thông tin</a>
-                                    </div>
-                                </div>
+                                <button class="card__button">Read more</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="container">
-                        <div class="col-md-12">
+                        <div class="col-12">
                             <div class="section__animals--footer">
                                 <a href="#" class="section__animals--footer__link btn">Xem thêm</a>
                             </div>
@@ -542,7 +451,7 @@
                 </div>
                 <!-- Đồ chơi cho thú cưng -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <div class="section__animals--header">
                             <h3>
                                 <a href="#" class="section__animals--header__link">ĐỒ CHƠI CHO THÚ CƯNG</a>
@@ -551,7 +460,7 @@
                     </div>
                 </div>
                 <div class="row" >
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -569,7 +478,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -587,7 +496,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -605,7 +514,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="../IMG/PET/PhocSoc1.jpg" class="card-img-top" alt="Phốc Sốc" srcset="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="card-title">Phốc Sốc</h5>
+                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
+                                        <a href="#" class="btn card-link">Xem thông tin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="../IMG/PET/PhocSoc1.jpg" class="card-img-top" alt="Phốc Sốc" srcset="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="card-title">Phốc Sốc</h5>
+                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
+                                        <a href="#" class="btn card-link">Xem thông tin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -626,7 +571,7 @@
                 </div>
                 <div class="row">
                     <div class="container">
-                        <div class="col-md-12">
+                        <div class="col-12">
                             <div class="section__animals--footer">
                                 <a href="#" class="section__animals--footer__link btn">Xem thêm</a>
                             </div>
@@ -635,7 +580,7 @@
                 </div>
                 <!-- Thức ăn cho thú cưng -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <div class="section__animals--header">
                             <h3>
                                 <a href="#" class="section__animals--header__link">THỨC ĂN CHO THÚ CƯNG</a>
@@ -644,7 +589,7 @@
                     </div>
                 </div>
                 <div class="row" >
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -662,7 +607,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -680,7 +625,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -698,7 +643,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="../IMG/PET/PhocSoc1.jpg" class="card-img-top" alt="Phốc Sốc" srcset="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="card-title">Phốc Sốc</h5>
+                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
+                                        <a href="#" class="btn card-link">Xem thông tin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="../IMG/PET/PhocSoc1.jpg" class="card-img-top" alt="Phốc Sốc" srcset="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="card-title">Phốc Sốc</h5>
+                                        <p class="card-text">Giá : 1.000.000 VNĐ</p>
+                                        <a href="#" class="btn card-link">Xem thông tin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
                         <div class="card">
                             <div class="container">
                                 <div class="row">
@@ -757,15 +738,17 @@
                                             <span>Vui lòng đăng nhập trước khi mua sản phẩm để tích lũy điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Puppy Paws Pet Shop</span>    
                                         </div>
                                         <div class="mb-3">
-                                            <input type="phone" class="form-control" id="loginPhone" placeholder="Tài khoản(Số điện thoại)" required>
+                                            <input type="phone" class="form-control" id="loginPhone" onblur="checkTK()" placeholder="Số điện thoại" required>
+                                            <span id="errphone" class="text-danger"></span>
                                         </div>
                                         <div class="mb-3">   
-                                            <input type="password" class="form-control" id="loginPassword" placeholder="Mật khẩu" required>
+                                            <input type="password" class="form-control" id="loginPassword" onblur="checkMK()" placeholder="Mật khẩu" required>
+                                            <span id="errpass" class="text-danger"></span>
                                         </div>
                                         <div class="mb-3">
                                             <a href="#">Quên mật khẩu ?</a>
                                         </div>
-                                        <button type="submit" class="btn w-100">ĐĂNG NHẬP</button>
+                                        <button type="submit" id="btn-login" class="btn w-100">ĐĂNG NHẬP</button>
                                     </div>
                                 </form>
                             </div>
@@ -774,38 +757,41 @@
                                 <form>
                                     <div class="container">
                                         <div class="form-group"> 
-                                            <input type="text" class="form-control" id="name" placeholder="Họ tên">
+                                            <input type="text" class="form-control" id="name" onblur="checkName()" placeholder="Họ tên" required>
+                                            <span id="errname" class="text-danger"></span>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input type="tel" class="form-control" id="phone" placeholder="Số điện thoại">
+                                                <input type="phone" class="form-control" id="phone" onblur="checkPhone()" placeholder="Số điện thoại" required>
+                                                <span id="errPhone" class="text-danger"></span>
                                             </div>
                                             <div class="col-md-6">
-                                                <select class="form-control" id="gender">
-                                                    <option>Chọn giới tính</option>
+                                                <select class="form-control" id="gender" onblur="checkGender()">
+                                                    <option id="first">Chọn giới tính</option>
                                                     <option>Nam</option>
                                                     <option>Nữ</option>
                                                     <option>Khác</option>
                                                 </select>
+                                                <span id="errGender" class="text-danger"></span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                                                <input type="password" class="form-control" id="password" onblur="checkPass1()" placeholder="Mật khẩu" required>
+                                                <span id="errpass1" class="text-danger"></span>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="password" class="form-control" id="confirmPassword" placeholder="Xác nhận mật khẩu">
+                                                <input type="password" class="form-control" id="confirmPassword" onblur="checkPass2()" placeholder="Xác nhận mật khẩu" required>
+                                                <span id="errpass2" class="text-danger"></span>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="date" class="form-control" id="dob" placeholder="Chọn ngày (dd/mm/yyyy)">
-                                        </div>
+                                            <input type="text" class="form-control" id="email" onblur="checkEmail()" placeholder="abc123@gmail.com" required>
+                                            <span id="errEmail" class="text-danger"></span>
+                                        </div>  
                                         
                                         <span>Tôi đã đọc và đồng ý với <a href="#"><b>CHÍNH SÁCH</b></a> của chương trình.</span>
-                                        <button type="submit" class="btn btn-block w-100">ĐĂNG KÝ</button>
+                                        <button type="submit" id="btn-sign-in" class="btn btn-block w-100">ĐĂNG KÝ</button>
                                     </div>
                                 </form>
                             </div>
@@ -841,27 +827,31 @@
                                         <form>
                                             <div class="container">
                                                 <div class="form-group"> 
-                                                    <input type="text" class="form-control" id="name" placeholder="Họ tên">
+                                                    <input type="text" class="form-control" id="name-q" onblur="checkNameQ()" placeholder="Họ tên" required>
+                                                    <span id="errname-q" class="text-danger"></span>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        <input type="tel" class="form-control" id="phone" placeholder="Số điện thoại">
+                                                        <input type="phone" class="form-control" id="phone-q" onblur="checkPhoneQ()" placeholder="Số điện thoại" required>
+                                                        <span id="errPhone-q" class="text-danger"></span>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <select class="form-control" id="gender">
-                                                            <option>Chọn giới tính</option>
+                                                        <select class="form-control" id="gender-q" onblur="checkGenderQ()">
+                                                            <option id="first-q">Chọn giới tính</option>
                                                             <option>Nam</option>
                                                             <option>Nữ</option>
                                                             <option>Khác</option>
                                                         </select>
+                                                        <span id="errGender-q" class="text-danger"></span>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <textarea class="form-control" name="text_question" id="text_question" cols="50" rows="10" placeholder="Nhập nội dung bạn cần được tư vấn&hellip;"></textarea>
+                                                        <textarea class="form-control" name="text_question" id="text_question" onblur="checkTextQ()" cols="50" rows="10" placeholder="Nhập nội dung bạn cần được tư vấn&hellip;"></textarea>
+                                                        <span id="errTextQ" class="text-danger"></span>
                                                     </div>
                                                 </div>
-                                                <button type="submit" class="btn btn-block w-100">GỬI</button>
+                                                <button type="submit" id="btn-question" class="btn btn-block w-100">GỬI</button>
                                             </div>
                                         </form>
                                     </div>
@@ -873,7 +863,7 @@
             </div>
         </div>
         <!-- footer -->
-        <div class="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="footer-logo">
                     <img src="../IMG/LOGO/cityzoo.png" alt="cityzoo">
@@ -893,9 +883,9 @@
                         </div>
                         <div class="col-6">
                             <p>CHÍNH SÁCH</p>
-                            <p><a class="footer-top_link" href="#">Điều khoản sử dụng</a></p>
-                            <p><a class="footer-top_link" href="#">Chính sách bảo mật</a></p>
-                            <p><a class="footer-top_link" href="#">Chính sách đổi trả</a></p>
+                            <p><a class="footer-top_link" href="./contact1.html">Điều khoản sử dụng</a></p>
+                            <p><a class="footer-top_link" href="./contact1.html">Chính sách bảo mật</a></p>
+                            <p><a class="footer-top_link" href="./contact2.html">Chính sách đổi trả</a></p>
                             <p>CHỨNG NHẬN</p>
                             <img src="../IMG/LOGO/dmca-badge-w100-2x1-03.png" alt="chung nhan">
                         </div>
@@ -903,11 +893,13 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-12 col-md-6">
                             <p>Copyright © 2024 PUPPY PAWS - Thương Hiệu Đã Được Đăng Ký Bản Quyền</p>
                         </div>
-                        <div class="col-6">
-                            <img src="../IMG/LOGO/payment.png" alt="">
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="row">
+                                <div class=" col-sm-12 col-md-6"><img src="../IMG/LOGO/payment.png" alt="payment Puppy Paws"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -934,7 +926,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

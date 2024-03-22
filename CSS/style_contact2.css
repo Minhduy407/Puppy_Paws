@@ -1,0 +1,31 @@
+.link_body_home{
+    color: pink;
+}
+.link_body_contact{
+    color: rgb(249, 136, 155);
+    text-decoration: none;
+}
+.link_body_home:hover{
+    color: rgb(249, 136, 155);
+}
+.cont_h1{
+    color: #ffff;
+    background-color: #FFD5AC;;
+    border-radius: 50px 0 50px 0;   
+    font-size: 30px;
+    width: 33%;
+}
+.cont_span{
+    border-bottom: 2px solid #FFD5AC;
+}
+h2{
+    border-radius: 1px;
+    margin: 6px;
+    background-color: #FEC7C0;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #ffff;
+}
+.cont_h1:hover{
+    color: black;
+}

@@ -167,7 +167,7 @@ body {
 }
 
 .section__info i{
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
 
 .section__animals{
@@ -175,8 +175,8 @@ body {
     background-color: #f9f5f2;
 }
 
-.section__animals--header--banner{
-    margin: 10px 0 0 10px;
+.section__animals .container .row:nth-child(1){
+    margin-bottom: 20px;
 }
 
 .section__animals--header--banner img{
@@ -225,7 +225,7 @@ body {
 }
 
 .section__animals--footer{
-    margin-top: 2rem;
+    margin: 1.5rem 0;
     display: flex;
     justify-content: center;
 }
