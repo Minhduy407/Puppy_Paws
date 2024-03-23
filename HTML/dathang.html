@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-
+    <title>Puppy Paws Pet Shop</title>
+    
     <link rel="stylesheet" href="../ICON/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="../ICON/fontawesome-free-6.5.1-web/css/all.css">
     <link rel="shortcut icon" href="../IMG/Logo_header.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/layout_header_footer.css">
     <link rel="stylesheet" href="../CSS/style_home.css">
+    <link rel="stylesheet" href="../CSS/style_card.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="stylesheet" href="../CSS/style_card.css">
     <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/dathang.js"></script>
     <script src="../JS/home.js"></script>
-
-
+    
 </head>
-
 <body>
     <div class="wrapper">
         <header class="header" id="header">
@@ -100,166 +97,187 @@
             </div>
         </header>
 
-        <!-- End header -->
+        <!-- Đặt hàng -->
+        <div class="container my-md-5 py-md-3 px-md-5 bg-light" style="margin-top: 5rem; overflow: hidden;">
+            <div class="DatMua" style="margin-top: 13rem;">
+                <div class="body">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-5 border-top  col-sm-12 ">
+                            <div class="row"><label class="form-label mt-3" style="font-size: 1.1em;">THÔNG TIN KHÁCH HÀNG</label></div>
+                            <div class="row mb-sm-3 d-sm-flex flex-sm-row mt-2">
+                                <div class="col-md-1 col-sm-1 col-lg-1">
+                                    <label class="form-label">Họ</label>
+                                </div>
 
-        <section class="container">
-            <div class=" row list_product">
-                <div class=" col-4 box ">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
+                                <div class="col-md-2 col-sm-3 col-lg-3">
+                                    <input type="text" id="txtho" class="form-control" placeholder="Họ" oninput="thongbaochu('txtho','ho')">
+                                    <small id="ho" style="color: red;"></small>
+                                </div>
+
+                                <div class="col-md-1 col-sm-1 col-lg-1">
+                                    <label class="form-label">Tên </label>
+                                </div>
+
+                                <div class="col-md-8 col-sm-7 col-lg-7">
+                                    <input type="text" id="txtten" class="col-md-9 form-control" placeholder="Nhập tên" oninput="thongbaochu('txtten','ten')"> 
+                                    <small id="ten" style="color: red;"></small>
+                                </div>
                             </div>
-                            <button class="card__button">Read more</button>
+
+                            <div class="row mb-sm-3 d-sm-flex flex-sm-row">
+                                <div class="col-md-4 col-sm-5 col-lg-5">
+                                    <label class="form-label">Số điện thoại</label>
+                                </div>
+
+                                <div class="col-md-8 col-sm-7 col-lg-7">
+                                    <input type="text" id="txtsdt" class="col-md-9 form-control"
+                                        placeholder="Nhập số điện thoại" oninput="thongbaoso('txtsdt','sdt')">
+                                    <small id="sdt" style="color: red;"></small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-sm-3 d-sm-flex flex-sm-row">
+                                <div class="col-md-4 col-sm-5 col-lg-5">
+                                    <label class="form-label">Địa chỉ nhận hàng</label>
+                                </div>
+
+                                <div class="col-md-8 col-sm-7 col-lg-7">
+                                    <input type="text" id="txtdiachi" class="form-control" placeholder="Nhập địa chỉ" oninput="thongbaochu('txtdiachi','diachi')">
+                                    <small id="diachi" style="color: red;"></small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-sm-3 d-sm-flex flex-sm-row">
+                                <div class="col-md-4 col-sm-5 col-lg-5">
+                                    <label class="form-label">Tỉnh/Thành phố</label>
+                                </div>
+
+                                <div class="col-md-8 col-sm-7 col-lg-7">
+                                    <input type="text" id="txttinh" class="form-control"
+                                        placeholder="Nhập tỉnh/thành phố" oninput="thongbaochu('txttinh','tinh')">
+                                    <small id="tinh" style="color: red;"></small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-sm-3 d-sm-flex flex-sm-row">
+                                <div class="col-md-4 col-sm-5 col-lg-5">
+                                    <label class="form-label">Địa chỉ email</label>
+                                </div>
+
+                                <div class="col-md-8 col-sm-7 col-lg-7">
+                                    <input type="email" id="txtemail" class="form-control" placeholder="Email" oninput="thongbaoemail('txtemail','email')">
+                                    <small id="email" style="color: red;"></small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-sm-3 d-sm-flex flex-sm-row">
+                                <div class="col-md-4 col-sm-5 col-lg-5">
+                                    <label class="form-label">Ghi chú đơn hàng</label>
+                                </div>
+
+                                <div class="col-md-8 col-sm-7 col-lg-7">
+                                    <textarea name="Thông tin bổ sung" id="" cols="27" rows="4" placeholder="Ghi chú"
+                                        class="form-control"></textarea>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
+
+                        <div class="col-1">
+
                         </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
+
+                        <div class="col-lg-6 col-lg-6 border border-primary-subtle col-sm-12">
+                            <div class="row">
+                                <div class="row"><label class="form-label mt-3" style="font-size: 1.1em;">ĐƠN HÀNG CỦA BẠN</label></div>
+                                <div class="row pe-3 mt-2">
+                                    <table class="table table-bordered table-hover table-striped ms-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Tên sản phẩm</th>
+                                                <th>Số lượng</th>
+                                                <th>Đơn giá</th>
+                                                <th>Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td id="tensp"></td>
+                                                <td>
+                                                    <div class="soluong">
+                                                        <input type="number" onkeyup="capnhatTien()" id="quantity"
+                                                            name="quantity"
+                                                            class="px-2 text-center form-control input-number" value="0"
+                                                            min="1" max="20">
+                                                    </div>
+                                                </td>
+                                                <td id="dongia"></td>
+                                                <td id="thanhtien"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-md-5 col-sm-6 col-lg-4">
+                                        <label class="form-label ms-1">Đơn vị vận chuyển:</label>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-3 col-lg-4">
+                                        <select id="select" class="col-md-4 col-sm-4 form-select">
+                                            <option value="Nhanh" selected>Nhanh</option>
+                                            <option value="Bình thường">Bình thường</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-2 col-lg-3">
+                                        <input type="text" class="form-control" id="txtDongia" disabled value="90000"
+                                            style="color: red; border: none; outline: none;">
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 col-lg-1">
+                                        <i style="color: red; border: none; outline: none;">đ</i>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row d-flex  ">
+                                    <label class="mr-sm-3 ms-1">Hình thức thanh toán: </label>
+                                    <span><input class="mt-sm-2 ms-5" type="radio" name="httt" id="radtindung"><label
+                                            for="radtindung" class="mr-sm-3">Thẻ tín dụng/Ghi nợ</label></span>
+                                    <span><input class="mt-sm-2 ms-5" type="radio" name="httt" id="radtienmat"
+                                            checked><label for="radtienmat">Thanh toán
+                                            khi nhận hàng</label></span>
+                                </div>
+
+                                <div class="row mb-md-2">
+                                        <div class="col-3">Tổng tiền: </div>
+                                        <div class="col-1"></div>
+                                        <div class="me-md-2 col-4" id="tongtien"
+                                        style="color: red;"></div>
+                                </div>
+
+                                <div class="row">
+                                    <button
+                                        class="btn btn-sucess btn-group-justified col-md-4 col-sm-5 col-lg-4 ms-3 mb-2"
+                                        id="btndathang" type="button" style="color: white; background-color: green;">
+                                        ĐẶT HÀNG
+                                    </button>
+                                    <small class="text-wrap" style="text-align: justify;">Thông tin cá nhân của bạn sẽ được
+                                        sử dụng để xử lý đơn hàng,
+                                        tăng
+                                        trải
+                                        nghiệm
+                                        sử dụng website, và cho các mục đích cụ thể khác đã được mô tả trong chính sách
+                                        riêng tư
+                                        của
+                                        chúng tôi.
+                                    </small>
+                                </div>
                             </div>
-                            <button class="card__button">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 box">
-                    <div class="card_product">
-                        <img class="card__background" src="../IMG/PET/Husky1.jpg"
-                            alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-                            width="1920" height="2193" />
-                        <div class="card__content | flow">
-                            <div class="card__content--container | flow">
-                                <h2 class="card__title">Husky</h2>
-                                <p class="card__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-                                    labore laudantium deserunt fugiat numquam.
-                                </p>
-                            </div>
-                            <button class="card__button">Read more</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+        <!-- footer -->
         <footer class="footer">
             <div class="container">
                 <div class="footer-logo">
@@ -479,5 +497,4 @@
         </div>
     </div>
 </body>
-
 </html>
