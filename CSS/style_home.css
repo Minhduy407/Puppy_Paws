@@ -34,9 +34,10 @@ body {
 
 .section__banner__div--left__title{
     background-color: #FFD5AC;
-    padding: 1.5rem 0 1.5rem 1rem;
+    padding: 1rem;
     border-radius: 0.4rem;
     color: white;
+    font-size: 20px;
 }
 
 .section__banner__div--left__title:hover {
@@ -201,10 +202,17 @@ body {
 .section__animals .card-title,
 .section__animals .card-text,
 .section__animals .card-link{
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
+}
+
+.section__animals .card-title{
+    color: rgb(5, 5, 43);
+}
+
+.section__animals .card-img-top{
+    cursor: pointer;
 }
 
 .section__animals--header{
@@ -232,5 +240,30 @@ body {
 
 .section__animals--footer__link{
     text-decoration: none;
+}
+
+.section__animals .card .container .row:nth-child(1) {
+    position: relative;
+    overflow: hidden;
+}
+.section__animals .card .container .row:nth-child(1):hover .overlay {
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.overlay-content {
+    text-align: center;
 }
 
