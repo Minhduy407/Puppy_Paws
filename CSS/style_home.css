@@ -249,12 +249,12 @@ body {
 .section__animals .card .container .row:nth-child(1):hover .overlay {
     opacity: 1;
 }
-.overlay {
+.section__animals .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 202.387px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
@@ -263,7 +263,15 @@ body {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-.overlay-content {
+.section__animals .overlay-content {
     text-align: center;
+}
+
+.section__animals .card .container{
+    height: 273.587px;
+}
+
+.section__animals .card-img-top{
+    height: 202.387px;
 }
 
